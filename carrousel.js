@@ -1,7 +1,7 @@
 $(document).ready(function(){
 var $carrousel = $('#carrousel'), 
     $img = $('#carrousel img'),
-    $points = $('.cercle') ,
+    $points = $('.carre') ,
     indexImg = $img.length - 1, 
     i = 0, 
     $currentImg = $img.eq(i); 
@@ -13,7 +13,7 @@ var $carrousel = $('#carrousel'),
 
 
     $('.next').click(function(){
-    $('.cercle').css('background','white');
+    $('.carre').css('background','white');
 
     i++; 
 
@@ -31,7 +31,7 @@ var $carrousel = $('#carrousel'),
 });
 
 $('.prev').click(function(){ 
-$('.cercle').css('background','white');
+$('.carre').css('background','white');
 
     i--; 
     if( i >= 0 ){
@@ -58,7 +58,7 @@ function slideImg(){
   }
 
   $img.css('display', 'none');
-  $('.cercle').css('blackground','white');
+  $('.carre').css('blackground','white');
 
   $currentImg = $img.eq(i);
   $currentPoint = $points.eq(i);
